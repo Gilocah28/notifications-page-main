@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,800;1,500;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  font-family: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  min-height: 100vh;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, p {
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+}
+
+.name {
+  color: hsl(224, 21%, 14%);
+  font-weight: 800;
+}
+
+.Verydarkblue {
+  font-weight: 700;
+}
+
+.blue {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+}
+
+.main-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .main-container {
+    padding: 1rem;
+  }
+}
+.main-container .notification-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-container .notification-container .count {
+  align-self: center;
+  font-size: 1rem;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+}
+.main-container .notification-container .unread:hover {
+  transition: color 0.1s ease-in;
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
+.main-container .notification-details-con {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-container .notification-details-con .notify-container {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.main-container .notification-details-con .notify-container img {
+  align-self: flex-start;
+  width: 50px;
+}
+.main-container .notification-details-con .notify-container .notify {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.main-container .notification-details-con .notify-container .time {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.main-container .notification-details-con .notify-container .privateMessage {
+  margin-top: 1rem;
+  border: 1px solid hsl(205, 33%, 90%);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.main-container .notification-details-con .notify-container .endGame {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+
+.colorContainer {
+  background-color: hsl(210, 60%, 98%);
+}/*# sourceMappingURL=style.css.map */

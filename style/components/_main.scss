@@ -1,0 +1,82 @@
+.main-container{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: $White;
+    border-radius: 10px;
+    @include tablet{
+        padding: 1rem;
+    }
+
+    .notification-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .count{
+            align-self: center;
+            font-size: 1rem;
+            background-color: $Blue;
+            color: $White;
+            padding: .3rem .8rem;
+            border-radius: 8px;
+        }
+        .unread{
+            &:hover{
+                transition: color .10s ease-in;
+                cursor: pointer;
+                color: $Blue;
+            }
+        }
+    }
+
+    .notification-details-con{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        
+        
+        .notify-container{
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 10px;
+            
+
+            img{
+                align-self: flex-start;
+                width: 50px;
+            }
+
+            .notify{
+                font-size: .9rem;
+                line-height: 1.5rem;
+            }
+
+            .time{
+                margin-top: .5rem;
+                font-size: .9rem;
+            }
+
+            .privateMessage{
+                margin-top: 1rem;
+                border: 1px solid $Lightgrayishblue2;
+                padding: 1rem;
+                border-radius: 10px;
+            }
+            .endGame{
+                color: $Darkgrayishblue;
+                font-weight: 800;
+            }
+
+            
+        }
+
+    }
+}
+.colorContainer{
+    background-color: $Verylightgrayishblue;
+}
