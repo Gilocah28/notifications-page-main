@@ -19,6 +19,10 @@ body{
     padding: 1rem;
     align-items: center;
     justify-content: center;
+    @include tablet{
+        background-color: $Verylightgrayishblue;
+        
+    }
 }
 
 h1,p{
@@ -35,14 +39,28 @@ p{
 .name{
     color: $Verydarkblue;
     font-weight: 800;
+    &:hover{
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        color: $Blue;
+    }
 }
 
 .Verydarkblue{
     font-weight: 700;
+    &:hover{
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        color: $Blue;
+    }
 }
 .blue{
     color: $Blue;
     font-weight: 800;
+    &:hover{
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+    }
 }
 
 

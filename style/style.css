@@ -21,6 +21,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  body {
+    background-color: hsl(210, 60%, 98%);
+  }
+}
 
 h1, p {
   font-size: 1rem;
@@ -39,14 +44,28 @@ p {
   color: hsl(224, 21%, 14%);
   font-weight: 800;
 }
+.name:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
 
 .Verydarkblue {
   font-weight: 700;
+}
+.Verydarkblue:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
 }
 
 .blue {
   color: hsl(219, 85%, 26%);
   font-weight: 800;
+}
+.blue:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .main-container {
@@ -58,6 +77,7 @@ p {
 @media screen and (min-width: 768px) {
   .main-container {
     padding: 1rem;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.27);
   }
 }
 .main-container .notification-container {
@@ -109,11 +129,31 @@ p {
   padding: 1rem;
   border-radius: 10px;
 }
+.main-container .notification-details-con .notify-container .privateMessage:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  background-color: hsl(205, 33%, 90%);
+}
 .main-container .notification-details-con .notify-container .endGame {
   color: hsl(219, 12%, 42%);
   font-weight: 800;
 }
+.main-container .notification-details-con .notify-container .endGame:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
 
 .colorContainer {
   background-color: hsl(210, 60%, 98%);
+}
+
+.dot::after {
+  content: "";
+  display: inline-block; /* Ensures the pseudo-element behaves like a block */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(1, 90%, 64%);
+  margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
