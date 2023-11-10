@@ -38,13 +38,23 @@
         gap: 1rem;
         
         
-        
+        .containerWith-Images{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         .notify-container{
             display: flex;
             align-items: center;
             padding: 1rem;
             gap: 1rem;
             border-radius: 10px;
+            cursor: pointer;
+
+            .notify-con{
+                display: flex;
+                gap: 1rem;
+            }
             
 
             img{

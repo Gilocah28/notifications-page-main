@@ -104,12 +104,22 @@ p {
   flex-direction: column;
   gap: 1rem;
 }
+.main-container .notification-details-con .containerWith-Images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .main-container .notification-details-con .notify-container {
   display: flex;
   align-items: center;
   padding: 1rem;
   gap: 1rem;
   border-radius: 10px;
+  cursor: pointer;
+}
+.main-container .notification-details-con .notify-container .notify-con {
+  display: flex;
+  gap: 1rem;
 }
 .main-container .notification-details-con .notify-container img {
   align-self: flex-start;

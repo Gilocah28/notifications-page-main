@@ -14,13 +14,13 @@
 
   <div class="main-container">
     <div class="notification-container">
-      <h1>Notifications <span class="count">3</span></h1>
+      <h1>Notifications <span class="count">0</span></h1>
       <p class="unread">Mark all as read</p>
     </div>
 
     <div class="notification-details-con">
 
-      <div class="notify-container colorContainer">
+      <div class="notify-container readNotify colorContainer" id="containerDiv">
         <img src="/assets/images/avatar-mark-webber.webp" alt="Profile1">
         <div class="text-container">
           <p class="notify dot">
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="notify-container colorContainer">
+      <div class="notify-container readNotify colorContainer" id="containerDiv">
         <img src="/assets/images/avatar-angela-gray.webp" alt="Profile1">
         <div class="text-container">
           <p class="notify dot">
@@ -46,7 +46,7 @@
         </div>
       </div>
 
-      <div class="notify-container colorContainer">
+      <div class="notify-container readNotify colorContainer"  id="containerDiv">
         <img src="/assets/images/avatar-jacob-thompson.webp" alt="Profile1">
         <div class="text-container">
           <p class="notify dot">
@@ -77,8 +77,9 @@
           </div>
         </div>
 
-        <div class="notify-container">
-          <img src="/assets/images/avatar-kimberly-smith.webp" alt="Profile1">
+        <div class="notify-container containerWith-Images">
+          <div class="notify-con">
+            <img src="/assets/images/avatar-kimberly-smith.webp" alt="Profile1">
           <div class="text-container">
             <p class="notify">
               <span class="name"> Kimberly Smith</span>
@@ -87,6 +88,7 @@
             <p class="time">
               1 week ago
             </p>
+           </div>
           </div>
           <img src="/assets/images/image-chess.webp" alt="Commented-image">
         </div>
@@ -124,5 +126,8 @@
 
     </div>
   </div>
+
+
+  <script src="/scripts/app.js"></script>
 </body>
 </html>
